@@ -5,6 +5,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .song {
@@ -48,6 +51,9 @@ body {
   padding: 10px;
   position: relative;
   width: 600px;
+  max-width: 90vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .text-box p {
@@ -223,6 +229,10 @@ body {
 #replay {
   cursor: pointer;
   z-index: 3;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Media Queries */
@@ -250,6 +260,185 @@ body {
   }
 }
 
+/* Mobile First - Small phones */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .two {
+    font-size: 1rem;
+  }
+
+  .three {
+    font-size: 2rem;
+  }
+
+  .four .text-box {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .text-box .fake-btn {
+    bottom: -35px;
+    right: 5px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .five p {
+    font-size: 1.5rem;
+  }
+
+  .idea-5 {
+    font-size: 2.5rem;
+  }
+
+  .idea-5 span {
+    display: block;
+  }
+
+  .idea-6 span {
+    font-size: 8rem;
+  }
+
+  .six img {
+    height: 250px;
+  }
+
+  .six .hat {
+    width: 40px;
+    left: 30%;
+  }
+
+  .wish-hbd {
+    font-size: 1.8em;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+
+  .nine p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+  .baloons img {
+    width: 30px;
+  }
+}
+
+/* Medium phones */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .one {
+    font-size: 3.5rem;
+  }
+
+  .three {
+    font-size: 2.5rem;
+  }
+
+  .four .text-box {
+    width: 90%;
+  }
+
+  .five p {
+    font-size: 1.8rem;
+  }
+
+  .idea-5 {
+    font-size: 3rem;
+  }
+
+  .idea-6 span {
+    font-size: 9rem;
+  }
+
+  .six img {
+    height: 300px;
+  }
+
+  .six .hat {
+    width: 60px;
+    left: 35%;
+  }
+
+  .wish-hbd {
+    font-size: 2.5em;
+  }
+
+  .wish h5 {
+    font-size: 1.6rem;
+  }
+
+  .nine p {
+    font-size: 1.7rem;
+  }
+}
+
+/* Large phones and small tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+
+  .one {
+    font-size: 4rem;
+  }
+
+  .three {
+    font-size: 2.8rem;
+  }
+
+  .four .text-box {
+    width: 80%;
+  }
+
+  .five p {
+    font-size: 1.9rem;
+  }
+
+  .idea-5 {
+    font-size: 3.5rem;
+  }
+
+  .idea-6 span {
+    font-size: 12rem;
+  }
+
+  .six img {
+    height: 320px;
+  }
+
+  .six .hat {
+    width: 70px;
+    left: 38%;
+  }
+
+  .wish-hbd {
+    font-size: 2.8em;
+  }
+
+  .wish h5 {
+    font-size: 1.8rem;
+  }
+
+  .nine p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Legacy support for very old media queries */
 @media screen and (max-width: 500px) {
   .container {
     width: 90%;
@@ -273,7 +462,6 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
