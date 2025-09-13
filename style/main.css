@@ -237,48 +237,23 @@ body {
   -webkit-user-select: none;
 }
 
-/* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-/* Mobile First - Small phones */
-@media screen and (max-width: 480px) {
+/* Responsive Design - Single Layout */
+@media screen and (max-width: 768px) {
   .container {
     width: 95%;
     padding: 0 10px;
   }
 
   .one {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .two {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .three {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .four .text-box {
@@ -294,11 +269,11 @@ body {
   }
 
   .five p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .idea-5 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .idea-5 span {
@@ -310,230 +285,16 @@ body {
   }
 
   .six img {
-    height: 250px;
-  }
-
-  .six .hat {
-    width: 40px;
-    left: 30%;
-  }
-
-  .wish-hbd {
-    font-size: 1.8em;
-  }
-
-  .wish h5 {
-    font-size: 1.2rem;
-  }
-
-  .nine p {
-    font-size: 1.3rem;
-    font-weight: lighter;
-  }
-
-  .baloons img {
-    width: 25px;
-  }
-
-  .eight svg {
-    width: 15px;
-  }
-
-  .eight svg:nth-child(1) {
-    left: 5%;
-    top: 5%;
-  }
-
-  .eight svg:nth-child(2) {
-    left: 35%;
-    top: 20%;
-  }
-
-  .eight svg:nth-child(3) {
-    left: 20%;
-    top: 30%;
-  }
-
-  .eight svg:nth-child(4) {
-    left: 55%;
-    top: 40%;
-  }
-
-  .eight svg:nth-child(5) {
-    left: 10%;
-    top: 65%;
-  }
-
-  .eight svg:nth-child(6) {
-    left: 75%;
-    top: 40%;
-  }
-
-  .eight svg:nth-child(7) {
-    left: 80%;
-    top: 65%;
-  }
-
-  .eight svg:nth-child(8) {
-    left: 35%;
-    top: 80%;
-  }
-
-  .eight svg:nth-child(9) {
-    left: 85%;
-    top: 85%;
-  }
-}
-
-/* Medium phones */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
-  .one {
-    font-size: 3.5rem;
-  }
-
-  .three {
-    font-size: 2.5rem;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .five p {
-    font-size: 1.8rem;
-  }
-
-  .idea-5 {
-    font-size: 3rem;
-  }
-
-  .idea-6 span {
-    font-size: 9rem;
-  }
-
-  .six img {
-    height: 300px;
-  }
-
-  .six .hat {
-    width: 60px;
-    left: 35%;
-  }
-
-  .wish-hbd {
-    font-size: 2.5em;
-  }
-
-  .wish h5 {
-    font-size: 1.6rem;
-  }
-
-  .nine p {
-    font-size: 1.7rem;
-  }
-
-  .baloons img {
-    width: 35px;
-  }
-
-  .eight svg {
-    width: 18px;
-  }
-}
-
-/* Large phones and small tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    width: 85%;
-  }
-
-  .one {
-    font-size: 4rem;
-  }
-
-  .three {
-    font-size: 2.8rem;
-  }
-
-  .four .text-box {
-    width: 80%;
-  }
-
-  .five p {
-    font-size: 1.9rem;
-  }
-
-  .idea-5 {
-    font-size: 3.5rem;
-  }
-
-  .idea-6 span {
-    font-size: 12rem;
-  }
-
-  .six img {
-    height: 320px;
-  }
-
-  .six .hat {
-    width: 70px;
-    left: 38%;
-  }
-
-  .wish-hbd {
-    font-size: 2.8em;
-  }
-
-  .wish h5 {
-    font-size: 1.8rem;
-  }
-
-  .nine p {
-    font-size: 1.8rem;
-  }
-
-  .baloons img {
-    width: 40px;
-  }
-
-  .eight svg {
-    width: 20px;
-  }
-}
-
-/* Legacy support for very old media queries */
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    bottom: -38px;
-    right: 5px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
+    height: 280px;
   }
 
   .six .hat {
     width: 50px;
+    left: 35%;
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
   .wish h5 {
@@ -541,7 +302,15 @@ body {
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: lighter;
+  }
+
+  .baloons img {
+    width: 30px;
+  }
+
+  .eight svg {
+    width: 18px;
   }
 }
