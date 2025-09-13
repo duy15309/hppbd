@@ -125,14 +125,16 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
+  width: 50px;
+  height: auto;
 }
 
 .baloons img:nth-child(even) {
-  left: -10%;
+  left: -5%;
 }
 
 .baloons img:nth-child(odd) {
-  right: -10%;
+  right: -5%;
 }
 
 .baloons img:nth-child(3n + 0) {
@@ -157,56 +159,56 @@ body {
 
 .eight svg:nth-child(1) {
   fill: #bd6ecf;
-  left: 5vw;
-  top: 7vh;
+  left: 10%;
+  top: 10%;
 }
 
 .eight svg:nth-child(2) {
   fill: #7dd175;
-  left: 35vw;
-  top: 23vh;
+  left: 40%;
+  top: 25%;
 }
 
 .eight svg:nth-child(3) {
   fill: #349d8b;
-  left: 23vw;
-  top: 33vh;
+  left: 25%;
+  top: 35%;
 }
 
 .eight svg:nth-child(4) {
   fill: #347a9d;
-  left: 57vw;
-  top: 43vh;
+  left: 60%;
+  top: 45%;
 }
 
 .eight svg:nth-child(5) {
   fill: #c66053;
-  left: 7vw;
-  top: 68vh;
+  left: 15%;
+  top: 70%;
 }
 
 .eight svg:nth-child(6) {
   fill: #bfaa40;
-  left: 77vw;
-  top: 42vh;
+  left: 80%;
+  top: 45%;
 }
 
 .eight svg:nth-child(7) {
   fill: #e3bae8;
-  left: 83vw;
-  top: 68vh;
+  left: 85%;
+  top: 70%;
 }
 
 .eight svg:nth-child(8) {
   fill: #8762cb;
-  left: 37vw;
-  top: 86vh;
+  left: 40%;
+  top: 85%;
 }
 
 .eight svg:nth-child(9) {
   fill: #9a90da;
-  left: 87vw;
-  top: 94vh;
+  left: 90%;
+  top: 90%;
 }
 
 .wish-hbd {
@@ -330,7 +332,56 @@ body {
   }
 
   .baloons img {
-    width: 30px;
+    width: 25px;
+  }
+
+  .eight svg {
+    width: 15px;
+  }
+
+  .eight svg:nth-child(1) {
+    left: 5%;
+    top: 5%;
+  }
+
+  .eight svg:nth-child(2) {
+    left: 35%;
+    top: 20%;
+  }
+
+  .eight svg:nth-child(3) {
+    left: 20%;
+    top: 30%;
+  }
+
+  .eight svg:nth-child(4) {
+    left: 55%;
+    top: 40%;
+  }
+
+  .eight svg:nth-child(5) {
+    left: 10%;
+    top: 65%;
+  }
+
+  .eight svg:nth-child(6) {
+    left: 75%;
+    top: 40%;
+  }
+
+  .eight svg:nth-child(7) {
+    left: 80%;
+    top: 65%;
+  }
+
+  .eight svg:nth-child(8) {
+    left: 35%;
+    top: 80%;
+  }
+
+  .eight svg:nth-child(9) {
+    left: 85%;
+    top: 85%;
   }
 }
 
@@ -384,6 +435,14 @@ body {
   .nine p {
     font-size: 1.7rem;
   }
+
+  .baloons img {
+    width: 35px;
+  }
+
+  .eight svg {
+    width: 18px;
+  }
 }
 
 /* Large phones and small tablets */
@@ -435,6 +494,14 @@ body {
 
   .nine p {
     font-size: 1.8rem;
+  }
+
+  .baloons img {
+    width: 40px;
+  }
+
+  .eight svg {
+    width: 20px;
   }
 }
 
